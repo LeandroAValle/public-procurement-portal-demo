@@ -1,19 +1,21 @@
 # BW Portal de Compras — estudo de caso
 
-**Experiência profissional em um portal de pregões eletrônicos, documentada com a captura real da tela pública de acesso e uma visão da arquitetura.**
+**Portal usado por órgãos públicos e fornecedores para organizar processos de compra e acompanhar pregões eletrônicos, das propostas ao resultado.**
 
-[![Abrir estudo de caso](https://img.shields.io/badge/Estudo%20de%20caso-tela%20original-147eb4?style=for-the-badge)](https://leandroavalle.github.io/public-procurement-portal-demo/)
+[![Abrir estudo de caso](https://img.shields.io/badge/Estudo%20de%20caso-finalidade%20e%20arquitetura-147eb4?style=for-the-badge)](https://leandroavalle.github.io/public-procurement-portal-demo/)
 [![Sistema original](https://img.shields.io/badge/Sistema-original-17314c?style=for-the-badge)](https://compras.bwinformatica.com.br/)
 
-![Captura real da tela pública de acesso do BW Portal de Compras](assets/original-login.png)
+<p align="center"><img src="assets/bw-logo.png" alt="Símbolo original BW Sistemas" width="110"></p>
 
-> Captura autorizada da tela pública de acesso, feita em 16/10/2026. A imagem não contém dados de usuários ou processos. Este repositório não publica o código privado nem informações operacionais do sistema.
+> Este repositório contém a documentação do estudo de caso, não o código privado nem dados operacionais do sistema.
 
-## Visão geral
+## Finalidade
 
-O BW Portal de Compras apoia a gestão de compras públicas e pregões eletrônicos. A experiência profissional documentada neste estudo de caso envolve desenvolvimento e evolução de funcionalidades em uma aplicação usada para acompanhar processos, propostas, lotes, disputas, habilitação e atas.
+O BW Portal de Compras é usado por equipes de compras de órgãos públicos e por fornecedores para conduzir pregões eletrônicos. O fluxo reúne publicação de processos, envio de propostas, organização de lotes, disputa, habilitação e registro de atas e resultados.
 
-A página pública deste repositório exibe a identidade visual original por meio da captura acima e resume a arquitetura observada no código. Ela não redesenha o sistema nem simula telas autenticadas.
+**Problema que resolve:** mantém as etapas do processo de compra e a participação dos fornecedores organizadas em um único fluxo digital, com acompanhamento dos eventos da disputa.
+
+Este estudo de caso resume minha experiência no desenvolvimento e na evolução do produto e documenta a arquitetura observada. Não redesenha telas autenticadas nem publica o código privado.
 
 ## Fluxo de negócio
 
@@ -65,8 +67,8 @@ O diagrama é um resumo de componentes encontrados no projeto profissional; não
 
 ## Decisões de apresentação
 
-1. **Mostrar a interface original:** a captura vem da página pública de acesso do sistema, sem uma tela de produto redesenhada.
-2. **Preservar dados operacionais:** a imagem não contém dados autenticados, registros de órgãos, fornecedores ou processos.
+1. **Mostrar a marca original:** a página usa o símbolo BW disponível nos recursos do produto, sem publicar uma tela de login.
+2. **Preservar dados operacionais:** a vitrine não exibe registros de órgãos, fornecedores ou processos.
 3. **Separar portfólio e sistema:** este repositório contém documentação e a página do estudo de caso; não contém o código privado da aplicação.
 4. **Descrever a experiência com precisão:** o estudo registra participação no desenvolvimento e na evolução do produto, sem alegar autoria individual de todo o sistema.
 

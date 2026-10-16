@@ -1,19 +1,21 @@
 # BW Procurement Portal — case study
 
-**Professional experience with an electronic procurement platform, documented with a real capture of its public sign-in page and an architecture overview.**
+**A portal for public agencies and suppliers to manage procurement processes and follow electronic auctions, from proposals to results.**
 
-[![Open case study](https://img.shields.io/badge/Case%20study-original%20screen-147eb4?style=for-the-badge)](https://leandroavalle.github.io/public-procurement-portal-demo/)
+[![Open case study](https://img.shields.io/badge/Case%20study-purpose%20and%20architecture-147eb4?style=for-the-badge)](https://leandroavalle.github.io/public-procurement-portal-demo/)
 [![Original system](https://img.shields.io/badge/System-original-17314c?style=for-the-badge)](https://compras.bwinformatica.com.br/)
 
-![Real capture of the BW Procurement Portal public sign-in page](assets/original-login.png)
+<p align="center"><img src="assets/bw-logo.png" alt="Original BW Sistemas symbol" width="110"></p>
 
-> Authorized capture of the public sign-in page, taken on 2026-10-16. It contains no user or procurement records. This repository does not publish private source code or operational information.
+> This repository contains case study documentation, not the private application source code or operational data.
 
-## Overview
+## Purpose
 
-BW Portal de Compras supports public procurement and electronic auctions. This case study documents professional experience developing and evolving features in an application used to follow procurement processes, proposals, lots, auctions, supplier qualification, and session minutes.
+BW Portal de Compras is used by public procurement teams and suppliers to conduct electronic auctions. It brings together process publication, proposal submission, lot organization, bidding, qualification, minutes, and results.
 
-The public page in this repository shows the original visual identity through the capture above and summarizes architecture observed in the source. It does not redesign the product or simulate authenticated screens.
+**Problem it addresses:** keeps procurement steps and supplier participation organized in one digital workflow, with events that can be followed throughout the auction.
+
+This case study summarizes my experience developing and evolving the product and documents the architecture observed in the source. It does not reproduce authenticated screens or publish private source code.
 
 ## Business flow
 
@@ -65,8 +67,8 @@ This diagram summarizes components found in the professional project; it does no
 
 ## Presentation decisions
 
-1. **Show the original interface:** the capture comes from the system's public sign-in page, without a redesigned product screen.
-2. **Protect operational records:** the image contains no authenticated data, agency, supplier, or procurement records.
+1. **Show the original brand:** the page uses the BW symbol available in the product assets and does not publish a sign-in screen.
+2. **Protect operational records:** the showcase contains no agency, supplier, or procurement records.
 3. **Separate portfolio and system:** this repository contains documentation and the case-study page, not the application's private source code.
 4. **Describe professional experience accurately:** the case records participation in product development and evolution without claiming sole authorship of the entire system.
 
