@@ -1,24 +1,19 @@
-# Public Procurement Portal — portfolio demo
+# BW Procurement Portal — case study
 
-> **An independent demo with fictional data and interface.** It presents concepts for a public procurement and electronic auction portal based on the author's professional experience. It contains no source code, records, credentials, or visual identity from the private system.
+**Professional experience with an electronic procurement platform, documented with a real capture of its public sign-in page and an architecture overview.**
 
-[Open live demo](https://leandroavalle.github.io/public-procurement-portal-demo/) · [Versão em português](README.md)
+[![Open case study](https://img.shields.io/badge/Case%20study-original%20screen-147eb4?style=for-the-badge)](https://leandroavalle.github.io/public-procurement-portal-demo/)
+[![Original system](https://img.shields.io/badge/System-original-17314c?style=for-the-badge)](https://compras.bwinformatica.com.br/)
+
+![Real capture of the BW Procurement Portal public sign-in page](assets/original-login.png)
+
+> Authorized capture of the public sign-in page, taken on 2026-10-16. It contains no user or procurement records. This repository does not publish private source code or operational information.
 
 ## Overview
 
-Public procurement platforms coordinate multiple stages and user roles: publishing a process, receiving proposals, running lot-based disputes, qualifying suppliers, and recording outcomes. This demo shows how those stages can be organized in one experience, with traceability and live updates in mind.
+BW Portal de Compras supports public procurement and electronic auctions. This case study documents professional experience developing and evolving features in an application used to follow procurement processes, proposals, lots, auctions, supplier qualification, and session minutes.
 
-This case study presents hands-on experience developing and evolving a procurement and electronic auction portal. The described workflows and technologies reflect the architecture observed in the professional project; the web application in this repository is an independent visual representation.
-
-## Explore
-
-- **Overview:** synthetic indicators and active procurement processes.
-- **Processes:** search and filter by stage, modality, and status.
-- **Suppliers:** illustrative proposal and qualification tracking.
-- **Auction:** conceptual panel for lots, bids, and live events.
-- **Traceability:** timeline showing how important events can be presented.
-
-Page controls run in the browser against local demo data. No backend service is connected.
+The public page in this repository shows the original visual identity through the capture above and summarizes architecture observed in the source. It does not redesign the product or simulate authenticated screens.
 
 ## Business flow
 
@@ -32,9 +27,9 @@ flowchart LR
     F --> G[Export information]
 ```
 
-Actual workflows may vary by modality and applicable rules. This diagram summarizes the modules shown; it is not legal or operational guidance.
+This flow summarizes modules identified in the professional project. Steps and rules may vary by modality and applicable regulations.
 
-## Architecture observed in the professional project
+## Architecture observed
 
 ```mermaid
 flowchart TB
@@ -55,37 +50,30 @@ flowchart TB
     Commands --> Services
 ```
 
-This diagram summarizes components identified in the professional project's code. It does not describe every deployment detail or expose private dependencies.
+This diagram summarizes components found in the professional project; it does not describe all deployment infrastructure.
 
-## Technologies in the professional project
+## Technologies observed in the professional project
 
-| Area | Observed technologies |
+| Area | Technologies |
 |---|---|
-| Web application | C#, ASP.NET Core 8, MVC, Razor |
+| Web application | C#, ASP.NET Core 8, MVC, and Razor |
 | Persistence | SQL Server, Entity Framework Core, and Dapper |
-| Live communication | SignalR, Hub, and auction monitoring worker |
+| Real-time communication | SignalR, Hub, and monitoring worker |
 | Command organization | MediatR, handlers, AutoMapper, and FluentValidation |
 | Files and documents | NPOI for spreadsheets and iTextSharp for PDFs |
 | Observability | Serilog |
 
-The technologies above belong to the professional project. The demo hosted in this repository is a static HTML, CSS, and JavaScript page.
-
 ## Presentation decisions
 
-1. **Keep the showcase separate from the professional system:** this repository contains a standalone demo, not a copy of private source code.
-2. **Use fictional data:** all names, agencies, amounts, suppliers, and events shown in the interface are synthetic examples.
-3. **State the prototype boundary:** interactions run locally; the page does not submit bids or change real procurement processes.
-4. **Explain the architecture without credentials:** technical context is communicated without publishing configuration, infrastructure, or secrets.
-5. **Describe professional contribution carefully:** the case records product development and evolution experience without claiming sole authorship of the entire system.
-
-## Run locally
-
-Open `index.html` in a browser or serve the folder with any static web server. No installation, keys, or database connection are required.
+1. **Show the original interface:** the capture comes from the system's public sign-in page, without a redesigned product screen.
+2. **Protect operational records:** the image contains no authenticated data, agency, supplier, or procurement records.
+3. **Separate portfolio and system:** this repository contains documentation and the case-study page, not the application's private source code.
+4. **Describe professional experience accurately:** the case records participation in product development and evolution without claiming sole authorship of the entire system.
 
 ## About
 
-Portfolio demo by **Leandro Valle**, focused on software engineering, system integration, and digital public-sector workflows.
+Portfolio case study by **Leandro Valle**, focused on software development, integration, and public-sector digital workflows.
 
 ---
 
-*All displayed data is fictional. This demo is not a public procurement service and is not connected to government or corporate systems.*
+*This demo is not a procurement service and does not connect to the original system.*
