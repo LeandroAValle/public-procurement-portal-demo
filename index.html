@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f8fc">
+  <meta name="description" content="Demonstração de portfólio de um portal de compras públicas e pregões eletrônicos, com dados fictícios.">
+  <title>Portal Público — Compras &amp; Disputas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="prototype-banner"><span class="pulse"></span> DEMONSTRAÇÃO DE PORTFÓLIO <i>·</i> TODOS OS DADOS SÃO FICTÍCIOS</div>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#inicio" aria-label="Portal Público, início">
+        <span class="brand-symbol"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M6 11.5 16 5l10 6.5M8.5 12v12M15 12v12M21.5 12v12M5 26h22M4 28h24"/></svg></span>
+        <span><b>portal<span class="brand-dot">.</span>público</b><small>COMPRAS &amp; DISPUTAS</small></span>
+      </a>
+      <div class="workspace"><div class="workspace-mark">SP</div><div><b>Secretaria de Projetos</b><small>Ambiente demonstrativo</small></div><span class="chevron">⌄</span></div>
+      <span class="nav-label">WORKSPACE</span>
+      <nav class="main-nav" aria-label="Navegação principal">
+        <button class="nav-item active" data-view="overview"><span class="nav-icon">◫</span> Visão geral</button>
+        <button class="nav-item" data-view="processes"><span class="nav-icon">▤</span> Processos <span class="nav-count">12</span></button>
+        <button class="nav-item" data-view="suppliers"><span class="nav-icon">♙</span> Fornecedores</button>
+        <button class="nav-item" data-view="auctions"><span class="nav-icon">◉</span> Disputas ao vivo <span class="live-dot"></span></button>
+        <button class="nav-item" data-view="reports"><span class="nav-icon">▥</span> Relatórios</button>
+      </nav>
+      <span class="nav-label nav-label-bottom">ACOMPANHAMENTO</span>
+      <div class="sidebar-callout"><span class="callout-icon">✳</span><b>Do edital ao resultado</b><p>Etapas conectadas para dar visibilidade a cada decisão.</p><span class="callout-line"></span></div>
+      <div class="sidebar-user"><div class="avatar">LV</div><div><b>Leandro Valle</b><small>Visualização de portfólio</small></div><span class="more">···</span></div>
+    </aside>
+
+    <main class="main-content" id="inicio">
+      <header class="topbar"><button class="mobile-menu" id="mobileMenu" aria-label="Abrir menu">☰</button><div class="breadcrumbs">Workspace <span>/</span> <b id="breadcrumbCurrent">Visão geral</b></div><div class="top-actions"><span class="environment"><span></span> Ambiente de demonstração</span><button class="icon-button" aria-label="Notificações">♧<i></i></button><div class="top-avatar">LV</div></div></header>
+      <div class="page-wrap">
+        <section class="welcome-row"><div><div class="eyebrow"><span class="eyebrow-bar"></span> <time id="currentDate"></time></div><h1 id="pageTitle">Visão geral</h1><p id="pageSubtitle">Acompanhe os processos e as etapas da jornada de compras.</p></div><button class="primary-button" id="newProcess"><span>＋</span> Novo processo</button></section>
+
+        <section class="metrics" aria-label="Indicadores de demonstração">
+          <article class="metric-card"><div class="metric-top"><span>Processos em andamento</span><span class="metric-icon icon-blue">▤</span></div><div class="metric-value">24 <span class="metric-trend">↗ 12%</span></div><div class="metric-note">em relação ao período anterior</div><div class="spark spark-blue"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></article>
+          <article class="metric-card"><div class="metric-top"><span>Disputas hoje</span><span class="metric-icon icon-violet">◉</span></div><div class="metric-value">08 <span class="metric-trend">+ 3</span></div><div class="metric-note">sessões programadas</div><div class="spark spark-violet"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></article>
+          <article class="metric-card"><div class="metric-top"><span>Propostas recebidas</span><span class="metric-icon icon-amber">↗</span></div><div class="metric-value">186 <span class="metric-trend">↗ 8,4%</span></div><div class="metric-note">nos processos ativos</div><div class="spark spark-amber"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></article>
+          <article class="metric-card"><div class="metric-top"><span>Economia estimada</span><span class="metric-icon icon-green">R$</span></div><div class="metric-value metric-currency">R$ 2,48 mi</div><div class="metric-note">sobre o valor de referência</div><div class="spark spark-green"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></article>
+        </section>
+
+        <section class="content-grid">
+          <article class="panel processes-panel">
+            <div class="panel-heading"><div><div class="section-kicker">ACOMPANHAMENTO</div><h2>Processos recentes</h2><p>Visão sintética dos processos em destaque.</p></div><button class="text-button" data-view="processes">Ver todos <span>→</span></button></div>
+            <div class="table-tools"><label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Buscar processo..." aria-label="Buscar processo"></label><div class="filter-wrap"><button class="filter-button" id="filterButton">☷ <span id="filterLabel">Todos os status</span>⌄</button><div class="filter-menu" id="filterMenu"><button data-filter="all">Todos os status</button><button data-filter="Disputa">Em disputa</button><button data-filter="Propostas">Recebendo propostas</button><button data-filter="Habilitação">Em habilitação</button></div></div></div>
+            <div class="table-scroll"><table><thead><tr><th>PROCESSO</th><th>MODALIDADE</th><th>VALOR ESTIMADO</th><th>ETAPA</th><th>ENCERRAMENTO</th><th></th></tr></thead><tbody id="processRows"></tbody></table></div>
+            <div class="table-footer"><span>Exibindo <b id="rowCount">5</b> processos fictícios</span><button class="pagination-btn" aria-label="Página anterior">‹</button><button class="pagination-current">1</button><button class="pagination-btn" aria-label="Próxima página">›</button></div>
+          </article>
+          <div class="right-column">
+            <article class="panel live-panel"><div class="panel-heading compact"><div><div class="section-kicker">ACOMPANHAMENTO AO VIVO</div><h2>Disputas em andamento</h2></div><span class="live-badge"><i></i> AO VIVO</span></div><div class="auction-card"><div class="auction-card-top"><span class="auction-tag">PREGÃO ELETRÔNICO</span><span class="auction-time">◷ 00:18:42</span></div><h3>Aquisição de equipamentos de informática</h3><p>Processo 041/2026 <span>·</span> 6 lotes</p><div class="auction-progress"><div><span>Progresso da sessão</span><b>Em disputa</b></div><div class="progress-track"><i style="width:68%"></i></div></div><div class="auction-bottom"><div class="participant-stack"><i>F1</i><i>F2</i><i>F3</i><span>+12</span></div><span>15 participantes</span><button class="arrow-button" data-detail="1" aria-label="Ver disputa">↗</button></div></div><div class="live-event"><span class="event-indicator"></span><span><b>Novo lance recebido</b><small>Lote 03 · há 12 segundos</small></span><span class="event-amount">R$ 18.420</span></div><button class="secondary-button full-button" data-view="auctions">Acessar painel de disputas <span>→</span></button></article>
+            <article class="panel timeline-panel"><div class="panel-heading compact"><div><div class="section-kicker">TRILHA DE EVENTOS</div><h2>Atividade recente</h2></div><button class="more-button" aria-label="Mais opções">···</button></div><div class="timeline"><div class="timeline-item"><span class="timeline-icon timeline-green">✓</span><div><b>Propostas encerradas</b><p>PE 038/2026 · 12 propostas recebidas</p><small>Hoje, 10:42</small></div></div><div class="timeline-item"><span class="timeline-icon timeline-blue">↗</span><div><b>Fornecedor convocado</b><p>PE 036/2026 · Lote 02</p><small>Hoje, 10:18</small></div></div><div class="timeline-item"><span class="timeline-icon timeline-violet">▤</span><div><b>Ata de sessão publicada</b><p>PE 033/2026 · Resultado disponível</p><small>Hoje, 09:56</small></div></div></div></article>
+          </div>
+        </section>
+
+        <footer class="page-footer"><span><i></i> Protótipo visual · Dados sintéticos · Sem conexão com sistemas reais</span><a href="https://github.com/LeandroAValle/public-procurement-portal-demo" target="_blank" rel="noreferrer">Estudo de caso no GitHub ↗</a></footer>
+      </div>
+    </main>
+  </div>
+  <dialog class="detail-dialog" id="detailDialog"><form method="dialog"><button class="dialog-close" aria-label="Fechar">×</button></form><span class="dialog-kicker">PROCESSO DEMONSTRATIVO</span><h2 id="dialogTitle">Detalhes do processo</h2><p id="dialogDescription"></p><div class="dialog-facts"><div><small>MODALIDADE</small><b id="dialogMode"></b></div><div><small>ETAPA</small><b id="dialogStage"></b></div><div><small>VALOR FICTÍCIO</small><b id="dialogValue"></b></div></div><div class="dialog-note">Este painel usa dados de exemplo e não se conecta a processos reais.</div></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
